@@ -17,15 +17,15 @@ MQ135 mq135(PIN_MQ135);
 #define PIN_MQ2  A0
 MQ2 mq2(PIN_MQ2);
 int mq7ratio = 0, mq7carbon = 0, mq2ratio = 0, mq2LPG = 0, mq2methane = 0, mq2smoke = 0, mq2hydrogen = 0, mq135ratio = 0, mq135CO2 = 0;
-const int rele1 = D5;
-const int rele2 = D6;
-const int rele3 = D7;
+const int rele1 = D2;
+const int rele2 = D3;
+const int rele3 = D4;
 
 // Set these to run example.
 #define FIREBASE_HOST "realairsmort.firebaseio.com"
 #define FIREBASE_AUTH "dedvJsRv3jHcHplnFaPeJiPlsJKrOdNenfPCHWWr"
 #define WIFI_SSID "RedmiNote9Pro" 
-#define WIFI_PASSWORD "52f47186d255"
+#define WIFI_PASSWORD "elnurkkk"
 
 void setup() {
   pinMode(rele1, OUTPUT);
@@ -130,4 +130,6 @@ void loop() {
       Serial.println(Firebase.error());  
       return; 
   }
+
+  delay(3240000);
 }
