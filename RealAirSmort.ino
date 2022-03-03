@@ -17,23 +17,23 @@ MQ135 mq135(PIN_MQ135);
 #define PIN_MQ2  A0
 MQ2 mq2(PIN_MQ2);
 int mq7ratio = 0, mq7carbon = 0, mq2ratio = 0, mq2LPG = 0, mq2methane = 0, mq2smoke = 0, mq2hydrogen = 0, mq135ratio = 0, mq135CO2 = 0;
-const int rele1 = D2;
-const int rele2 = D3;
-const int rele3 = D4;
+const int rele1 = D2; //MQ relay pin
+const int rele2 = D3; //MQ relay pin
+const int rele3 = D4; //MQ relay pin
 
 // Set these to run example.
-#define FIREBASE_HOST "realairsmort.firebaseio.com"
-#define FIREBASE_AUTH "dedvJsRv3jHcHplnFaPeJiPlsJKrOdNenfPCHWWr"
-#define WIFI_SSID "RedmiNote9Pro" 
-#define WIFI_PASSWORD "elnurkkk"
+#define FIREBASE_HOST "realairsmort.firebaseio.com" //Firebase project link
+#define FIREBASE_AUTH "dedvJsRv3jHcHplnFaPeJiPlsJKrOdNenfPCHWWr" //Firebase key
+#define WIFI_SSID "RedmiNote9Pro" //WIFI name
+#define WIFI_PASSWORD "elnurkkk" //WIFI password
 
 void setup() {
   pinMode(rele1, OUTPUT);
   pinMode(rele2, OUTPUT);
   pinMode(rele3, OUTPUT);
-  digitalWrite(rele1, LOW); //Close to real time thing LOW = turn OFF, HIGH = turn ON Works MQ135
-  digitalWrite(rele2, LOW); //Middle one MQ7
-  digitalWrite(rele3, LOW); //Close to the edge MQ2
+  digitalWrite(rele1, LOW); //LOW = turn OFF, HIGH = turn ON
+  digitalWrite(rele2, LOW);
+  digitalWrite(rele3, LOW);
   // connect to wifi.
   Serial.begin(115200);
   WiFi.mode(WIFI_STA);
