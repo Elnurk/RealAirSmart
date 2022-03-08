@@ -9,7 +9,7 @@
 #include <WiFiClientSecure.h>
 #include <TroykaMQ.h>
 #include <stdio.h>
-
+//https://www.grc.com/fingerprints.htm Fingerprints site
 #define PIN_MQ7 A0
 MQ7 mq7(PIN_MQ7);
 #define PIN_MQ135  A0
