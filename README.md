@@ -1,24 +1,21 @@
 # RealAirSmart
 
-RealAirSmart is an environmental monitoring and control system that measures air quality and environmental parameters and communicates data to a connected dashboard. Designed for robotics competitions and demonstrations, the project uses a microcontroller with attached sensors (temperature, humidity, air quality, etc.) to capture data and actuators to maintain optimal conditions. The codebase includes a main Arduino sketch and bundled libraries for ease of use.
+RealAirSmart is an environmental monitoring system that measures environmental parameters and communicates data to a server. Designed for research work, the project uses a microcontroller with attached sensors to capture data. The codebase includes a main ESP sketch and bundled libraries for ease of use.
 
 ## Features
-- Monitors environmental parameters such as temperature, humidity, and gas/air quality.
-- Uses DHT sensors and gas sensors to provide real‑time data.
-- Communicates with a remote interface via serial/USB for data logging and display.
-- Actuates fans or devices to maintain safe air quality.
+- Monitors environmental parameters such as gas quantity, and air quality.
+- Communicates with a real-time server for data logging.
 - Organizes hardware drivers and libraries in the `library/` folder for portability.
 
 ## Hardware
-- **Microcontroller:** Arduino‑compatible board.
-- **Sensors:** DHT11/DHT22, MQ series gas sensors, and other analog sensors as required.
-- **Actuators:** Small DC fans or relay‑controlled devices for ventilation.
+- **Microcontroller:** ESP32 board.
+- **Sensors:** MQ series gas sensors, and other analog sensors as required.
 - **Libraries:** ArduinoJson, firebase‑arduino (stored in the `library/` folder).
 
 ## Software / Stack
-- Written in C++ for the Arduino platform.
+- Written in C++ for the ESP32 platform.
 - Uses the [ArduinoJson](https://github.com/bblanchon/ArduinoJson) library to format sensor data.
-- Includes the [Firebase Arduino](https://github.com/FirebaseExtended/firebase-arduino) library for optional cloud data upload.
+- Includes the [Firebase Arduino](https://github.com/FirebaseExtended/firebase-arduino) library for cloud data upload.
 - The `RealAirSmort.ino` sketch contains the main control logic.
 
 ## Build & Run
