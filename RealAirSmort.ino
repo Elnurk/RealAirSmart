@@ -22,10 +22,10 @@ const int rele2 = D3; //MQ relay pin
 const int rele3 = D4; //MQ relay pin
 
 // Set these to run example.
-#define FIREBASE_HOST "realairsmort.firebaseio.com" //Firebase project link
-#define FIREBASE_AUTH "dedvJsRv3jHcHplnFaPeJiPlsJKrOdNenfPCHWWr" //Firebase key
+#define FIREBASE_HOST "123.firebaseio.com" //Firebase project link
+#define FIREBASE_AUTH "123" //Firebase key
 #define WIFI_SSID "RedmiNote9Pro" //WIFI name
-#define WIFI_PASSWORD "elnurkkk" //WIFI password
+#define WIFI_PASSWORD "elnurk" //WIFI password
 
 void setup() {
   pinMode(rele1, OUTPUT);
@@ -133,3 +133,4 @@ void loop() {
 
   delay(3240000);
 }
+
